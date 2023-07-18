@@ -1,6 +1,6 @@
 {
   "name": "onsite-client-dev",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Onsite Electron App (Dev)",
   "main": "index.js",
   "author": "GYCICT",

@@ -103,7 +103,7 @@ function student_actions_show(id) {
     // One can be a signut or a signout
 
     document.getElementById('spinner').hidden = false;
-
+    console.log(id);
 
     $.ajax({
         url: `https://onsitedev.gyc.tas.edu.au/api/2.0/studentactions?id=${id}`,
@@ -136,6 +136,7 @@ function student_actions_show(id) {
 
         }, error: function (result) {
             // Display the json error as an alerrt
+            console.log(result);
             let r = JSON.parse(result.responseJSON)
             console.log(r)
             createLog(r)
@@ -289,11 +290,11 @@ function UI_selector(bool) {
                 ReasonID: 22,
                 Description: "Slept in"
             },
-            {
-                type: 'Late',
-                ReasonID: 24,
-                Description: "Study Leave"
-            },
+            // {
+            //     type: 'Late',
+            //     ReasonID: 24,
+            //     Description: "Study Leave"
+            // },
             {
                 type: 'Late',
                 ReasonID: 23,
